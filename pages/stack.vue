@@ -1,4 +1,10 @@
 <script setup>
+definePageMeta({
+  middleware: [
+    'blog',
+  ],
+});
+
 const skillsLanguages = [
     { icon: 'skill-icons:javascript', name: 'JavaScript' },
     { icon: 'skill-icons:typescript', name: 'TypeScript' },

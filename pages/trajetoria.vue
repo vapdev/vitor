@@ -1,4 +1,9 @@
 <script setup>
+definePageMeta({
+  middleware: [
+    'blog',
+  ],
+});
 const empresas = ref(
     [
         {
