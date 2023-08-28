@@ -28,7 +28,7 @@ definePageMeta({
 
       <div class="mt-6">
         {{ $t('conhecer_melhor') }} <a class="text-green-600 cursor-pointer"
-          @click="setSelectedTab('trajetoria')">trajetória</a> {{ $t('ou_a_minha') }} <a class="text-green-600 cursor-pointer"
+          @click="setSelectedTab('trajetoria')">{{ $t('trajetoria') }}</a> {{ $t('ou_a_minha') }} <a class="text-green-600 cursor-pointer"
           @click="setSelectedTab('stack')">{{ $t('tech_stack') }}</a>.
       </div>
   </div>
