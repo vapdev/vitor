@@ -44,7 +44,7 @@ const skillsDatabase = [
         </div>
         <div class="text-sm mt-2 text-green-500">Este site foi feito com Nuxt e Tailwind</div>
 
-        <div class="text-xl flex flex-col md:flex-row mt-6 md:mt-12 w-full justify-between">
+        <div class="text-xl flex flex-col md:flex-row mt-6 md:mt-12 w-full justify-around">
             <div>
                 <span>Linguagens</span>
                 <div class="flex mt-2 md:mt-4 mr-2 w-[vw] mb-4">

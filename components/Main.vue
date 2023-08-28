@@ -1,17 +1,9 @@
 <script setup>
-import { useNavbarStore } from '~/store/navbar'
-import { storeToRefs } from 'pinia'
-
-const navbarStore = useNavbarStore()
-const { selectedTab } = storeToRefs(navbarStore)
-const { setSelectedTab } = navbarStore
 </script>
 
 <template>
   <div>
-    <Trajetoria v-if="selectedTab == 'trajetoria'" />
-    <Stack v-if="selectedTab == 'stack'" />
-    <div v-if="selectedTab == 'home'">
+    <div>
       <div class="mb-6 text-green-600">
         <span class="text-6xl">Olá, eu sou o</span>
         <span class="text-6xl font-bold"> Vitor</span>

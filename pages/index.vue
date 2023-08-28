@@ -6,9 +6,7 @@ definePageMeta({
 
 <template>
   <div>
-    <Trajetoria v-if="selectedTab == 'trajetoria'" />
-    <Stack v-if="selectedTab == 'stack'" />
-    <div v-if="selectedTab == 'home'">
+    <div>
       <div class="mb-6 text-green-600">
         <span class="text-6xl">{{ $t("hello") }}</span>
         <span class="text-6xl font-bold"> Vitor</span>
