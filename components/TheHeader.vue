@@ -5,7 +5,7 @@
                 <NuxtLink to="/">{{ $t('inicio') }}</NuxtLink>
             </li>
             <li class="mr-6 cursor-pointer" :class="$route.path == '/trajetoria' ? 'bg-green-950 font-bold' : ''">
-                <NuxtLink to="trajetoria">{{ $t('trajetoria') }}</NuxtLink>
+                <NuxtLink to="trajetoria">{{ $t('trajetoriaHeader') }}</NuxtLink>
             </li>
             <li class="mr-6 cursor-pointer" :class="$route.path == '/stack' ? 'bg-green-950 font-bold' : ''">
                 <NuxtLink to="stack">Stack</NuxtLink>
