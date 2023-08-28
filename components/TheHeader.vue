@@ -1,5 +1,5 @@
 <template>
-    <nav class="mb-10 flex text-white text-2xl">
+    <nav class="mb-2 flex text-white text-2xl">
         <ul class="flex">
             <li class="mr-6 cursor-pointer" :class="$route.path == '/' ? 'bg-green-950 font-bold' : ''">
                 <NuxtLink to="/">Início</NuxtLink>

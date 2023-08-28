@@ -39,7 +39,7 @@ const empresas = ref(
             e desejo de aprender me impulsionam a explorar novas tecnologias e enfrentar novos desafios.
         </div>
 
-        <div class="mt-12 font-bold">Empresas onde já trabalhei:</div>
+        <div class="md:mt-12 mt-6 font-bold">Empresas onde já trabalhei:</div>
         <div class="grid grid-cols-2 gap-4 mt-4">
             <div v-for="empresa in empresas" :key="empresa.nome">
                 <div class="font-bold text-green-500">{{ empresa.nome }}</div>

@@ -8,7 +8,7 @@ definePageMeta({
 
 <template>
     <div>
-        <div class="mb-4 text-4xl">Blog</div>
+        <div class="mb-4 text-4xl text-green-500">Blog</div>
         <div>
             Vou utilizar este espaço para compartilhar meus <span class="text-green-500">pensamentos, ideias e
                 experiências</span>. Fique à vontade para
