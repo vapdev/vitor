@@ -1,8 +1,10 @@
 <template>
   <div class="h-[100vh] flex flex-col justify-between">
     <div class="bg-zinc-950 p-6">
-      <TheHeader class="overflow-auto" />
-      <NuxtPage class="text-white text-2xl"/>
+      <div class="overflow-hidden max-h-12 z-10">
+        <TheHeader class="h-16 overflow-y-hidden overflow-x-auto pb-8" />
+      </div>
+      <NuxtPage class="text-white text-2xl" />
     </div>
     <TheFooter class="pb-6 text-white" />
   </div>
@@ -10,9 +12,10 @@
 
 <style>
 html {
-  font-family: 'Roboto Mono', monospace;
-  background-color: #09090B;
+  font-family: "Roboto Mono", monospace;
+  background-color: #09090b;
 }
+
 .slide-left-enter-active,
 .slide-left-leave-active,
 .slide-right-enter-active,
