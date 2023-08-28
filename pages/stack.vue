@@ -1,8 +1,8 @@
 <script setup>
 definePageMeta({
-  middleware: [
-    'blog',
-  ],
+    middleware: [
+        'blog',
+    ],
 });
 
 const skillsLanguages = [
@@ -37,18 +37,19 @@ const skillsDatabase = [
 
 <template>
     <div>
-        <div class="mb-4 text-4xl">Stack</div>
+        <div class="mb-4 text-4xl text-green-500">Stack</div>
         <div>
             Durante minha jornada profissional, tive a oportunidade de trabalhar com diversas linguagens e frameworks. Aqui
             está uma lista de algumas tecnologias que estiveram presentes ao longo do caminho:
         </div>
         <div class="text-sm mt-2 text-green-500">Este site foi feito com Nuxt e Tailwind</div>
-        <div class="text-xl flex mt-12 w-full justify-around">
+
+        <div class="text-xl flex flex-col md:flex-row mt-12 w-full justify-between">
             <div>
                 <span>Linguagens</span>
-                <div class="flex mt-4 mr-2">
+                <div class="flex mt-4 mr-2 w-[vw]">
                     <image class="hover:scale-110" v-for="skill in skillsLanguages" :title="skill.name">
-                        <Icon class="mr-4" size="3.5em" :name="skill.icon" :key="skill.name" />
+                        <Icon class="mr-4" size="2.5em" :name="skill.icon" :key="skill.name" />
                     </image>
                 </div>
             </div>
@@ -56,7 +57,7 @@ const skillsDatabase = [
                 <span>Frontend</span>
                 <div class="flex mt-4 mr-2">
                     <image class="hover:scale-110" v-for="skill in skillsFrontend" :title="skill.name">
-                        <Icon class="mr-4" size="3.5em" :name="skill.icon" :key="skill.name" />
+                        <Icon class="mr-4" size="2.5em" :name="skill.icon" :key="skill.name" />
                     </image>
                 </div>
             </div>
@@ -64,7 +65,7 @@ const skillsDatabase = [
                 <span>Backend</span>
                 <div class="flex mt-4 mr-2">
                     <image class="hover:scale-110" v-for="skill in skillsBackend" :title="skill.name">
-                        <Icon class="mr-4" size="3.5em" :name="skill.icon" :key="skill.name" />
+                        <Icon class="mr-4" size="2.5em" :name="skill.icon" :key="skill.name" />
                     </image>
                 </div>
             </div>
@@ -72,7 +73,7 @@ const skillsDatabase = [
                 <span>Banco de dados</span>
                 <div class="flex mt-4 mr-2">
                     <image class="hover:scale-110" v-for="skill in skillsDatabase" :title="skill.name">
-                        <Icon class="mr-4" size="3.5em" :name="skill.icon" :key="skill.name" />
+                        <Icon class="mr-4" size="2.5em" :name="skill.icon" :key="skill.name" />
                     </image>
                 </div>
             </div>

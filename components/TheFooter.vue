@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full justify-center bottom-0 absolute">
+    <div class="flex w-full justify-center">
         <div>
             <span>Minhas redes sociais</span>
             <div class="flex mt-3">

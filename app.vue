@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-[100vh] flex flex-col justify-between">
     <div class="bg-zinc-950 p-6">
       <TheHeader />
       <NuxtPage class="text-white text-2xl"/>

@@ -30,7 +30,7 @@ const empresas = ref(
 
 <template>
     <div>
-        <div class="mb-4 text-4xl">Histórico</div>
+        <div class="mb-4 text-4xl text-green-500">Histórico</div>
         <div class="mb-4">
             Desde jovem, fui fascinado por computadores, o que me levou a descobrir a programação ainda criança. Comecei a
             criar
@@ -45,7 +45,7 @@ const empresas = ref(
         </div>
 
         <div class="mt-12 font-bold">Empresas onde já trabalhei:</div>
-        <div class="grid grid-cols-2 gap-4 mt-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <div v-for="empresa in empresas" :key="empresa.nome">
                 <div class="font-bold text-green-500">{{ empresa.nome }}</div>
                 <div class="text-sm">{{ empresa.cargo }}</div>
