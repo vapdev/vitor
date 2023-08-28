@@ -25,7 +25,7 @@ const empresas = ref(
 
 <template>
     <div>
-        <div class="mb-4 text-xl">Histórico</div>
+        <div class="mb-4 text-4xl">Histórico</div>
         <div class="mb-4">
             Desde jovem, fui fascinado por computadores, o que me levou a descobrir a programação ainda criança. Comecei a
             criar

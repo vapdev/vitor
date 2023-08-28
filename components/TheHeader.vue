@@ -1,20 +1,20 @@
 <template>
     <nav class="mb-10 flex text-white text-2xl">
         <ul class="flex">
-            <li class="mr-6 cursor-pointer" :class="selectedTab == 'home' ? 'bg-green-950 font-bold' : ''">
-                <a @click="setSelectedTab('home')">Início</a>
+            <li class="mr-6 cursor-pointer" :class="$route.path == '/' ? 'bg-green-950 font-bold' : ''">
+                <NuxtLink to="/">Início</NuxtLink>
             </li>
-            <li class="mr-6 cursor-pointer" :class="selectedTab == 'trajetoria' ? 'bg-green-950 font-bold' : ''">
-                <a @click="setSelectedTab('trajetoria')">Trajetória</a>
+            <li class="mr-6 cursor-pointer" :class="$route.path == '/trajetoria' ? 'bg-green-950 font-bold' : ''">
+                <NuxtLink to="trajetoria">Trajetória</NuxtLink>
             </li>
-            <li class="mr-6 cursor-pointer" :class="selectedTab == 'stack' ? 'bg-green-950 font-bold' : ''">
-                <a @click="setSelectedTab('stack')">Stack</a>
+            <li class="mr-6 cursor-pointer" :class="$route.path == '/stack' ? 'bg-green-950 font-bold' : ''">
+                <NuxtLink to="stack">Stack</NuxtLink>
             </li>
-            <li class="mr-6 cursor-pointer" :class="selectedTab == 'blog' ? 'bg-green-950 font-bold' : ''">
-                <a @click="setSelectedTab('blog')">Blog</a>
+            <li class="mr-6 cursor-pointer" :class="$route.path == '/blog' ? 'bg-green-950 font-bold' : ''">
+                <NuxtLink to="blog">Blog</NuxtLink>
             </li>
-            <li class="mr-6 cursor-pointer" :class="selectedTab == 'contato' ? 'bg-green-950 font-bold' : ''">
-                <a @click="setSelectedTab('contato')">Contato</a>
+            <li class="mr-6 cursor-pointer" :class="$route.path == '/contato' ? 'bg-green-950 font-bold' : ''">
+                <NuxtLink to="contato">Contato</NuxtLink>
             </li>
         </ul>
         <div class="w-full"></div>
@@ -23,11 +23,4 @@
 </template>
 
 <script setup>
-import { useNavbarStore } from '~/store/navbar'
-import { storeToRefs } from 'pinia'
-
-const navbarStore = useNavbarStore()
-const { selectedTab } = storeToRefs(navbarStore)
-
-const { setSelectedTab } = navbarStore
 </script>

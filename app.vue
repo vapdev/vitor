@@ -2,7 +2,7 @@
   <div>
     <div class="bg-zinc-950 p-6">
       <TheHeader />
-      <Main class="text-white text-2xl"></Main>
+      <NuxtPage class="text-white text-2xl"/>
     </div>
     <TheFooter class="pb-6 text-white" />
   </div>

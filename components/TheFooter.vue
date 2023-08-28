@@ -3,7 +3,10 @@
         <div>
             <span>Minhas redes sociais</span>
             <div class="flex mt-3">
-                <Icon class="mr-2 cursor-pointer" v-for="skill in socialNetworks" size="2.3em" :name="skill" />
+                <a v-for="network in socialNetworks" :key="network.icon" :href="network.link" target="_blank"
+                    rel="noopener noreferrer">
+                    <Icon class="mr-2 cursor-pointer" size="2.3em" :name="network.icon" />
+                </a>
             </div>
         </div>
     </div>
@@ -12,9 +15,21 @@
 <script setup>
 
 const socialNetworks = [
-    'skill-icons:linkedin',
-    'skill-icons:github-dark',
-    'skill-icons:twitter',
-    'skill-icons:instagram',
-]
+    {
+        icon: 'skill-icons:linkedin',
+        link: 'https://www.linkedin.com/in/vitor-augusto-philippsen-bohn/'
+    },
+    {
+        icon: 'skill-icons:github-dark',
+        link: 'https://github.com/vapdev'
+    },
+    {
+        icon: 'skill-icons:twitter',
+        link: 'https://twiker.herokuapp.com/profile/VITIN-CRIMINAL'
+    },
+    {
+        icon: 'skill-icons:instagram',
+        link: 'https://www.instagram.com/vitinhoooooooo'
+    }
+];
 </script>
