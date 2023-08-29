@@ -80,6 +80,8 @@ export default defineI18nConfig(() => ({
             softpar_cargo: "Desarrollador Full Stack",
             ead_guru_periodo: "2022 - 2023",
             ead_guru_cargo: "Desarrollador Full Stack",
+            maxicon_periodo: "2021 - 2022",
+            maxicon_cargo: "Desarrollador Full Stack",
         },
     }
 }))
