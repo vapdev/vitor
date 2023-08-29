@@ -1,7 +1,7 @@
 <template>
     <div class="flex w-full justify-center">
-        <div>
-            <span>Minhas redes sociais</span>
+        <div class="flex flex-col items-center">
+            <span>{{ $t('my_social_media') }}</span>
             <div class="flex mt-3">
                 <a v-for="network in socialNetworks" :key="network.icon" :href="network.link" target="_blank"
                     rel="noopener noreferrer">
