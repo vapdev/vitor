@@ -8,7 +8,13 @@
     </div>
     <TheFooter class="pb-6 text-white" />
   </div>
+    <ContentRenderer :path="data" />
 </template>
+
+<script setup>
+const { data } = await useAsyncData('blog', () => queryContent('/blog').findOne())
+
+</script>
 
 <style>
 html {
