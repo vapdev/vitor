@@ -2,11 +2,11 @@
   <div class="h-[100vh] flex flex-col justify-between">
     <div class="bg-zinc-950 p-6">
       <div class="overflow-hidden max-h-12 z-10">
-        <TheHeader class="h-16 text-gray-300 overflow-y-hidden overflow-x-auto pb-8" />
+        <TheHeader class="h-16 text-white overflow-y-hidden overflow-x-auto pb-8" />
       </div>
-      <NuxtPage class="text-gray-300 text-2xl" />
+      <NuxtPage class="text-white text-2xl" />
     </div>
-    <TheFooter class="pb-6 text-gray-300" />
+    <TheFooter class="pb-6 text-white" />
   </div>
 </template>
 
