@@ -5,7 +5,8 @@ definePageMeta({
     ],
 });
 
-const { data } = await useAsyncData(() => queryContent('/blog').find())
+const { data } = await useAsyncData(() => queryContent('/blog').find());
+
 </script>
 
 <template>
@@ -24,7 +25,7 @@ const { data } = await useAsyncData(() => queryContent('/blog').find())
                 },
             }">
                 <swiper-slide v-for="post in data" :key="post.slug">
-                    <div class="px-4 py-2 h-[37rem] overflow-scroll border-green-500 border-2 rounded-md">
+                    <div class="px-4 py-2 h-[37rem] overflow-scroll border-green-500 border rounded-md">
                         <div class="flex justify-between">
                             <div class="text-2xl text-green-500">{{ post.description }}</div>
                             <div class="text-2xl text-green-500">{{ post.date }}</div>
