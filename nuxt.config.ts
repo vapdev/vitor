@@ -1,3 +1,5 @@
+import tailwindTypography from '@tailwindcss/typography'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -11,14 +13,19 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxt/content'
   ],
-  vite: {
-    server: {
-      watch: {
-        usePolling: true
-      }
-    }
-  },
+  // vite: {
+  //   server: {
+  //     watch: {
+  //       usePolling: true
+  //     }
+  //   }
+  // },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
+  tailwindcss: {
+    config: {
+      plugins: [tailwindTypography],
+    }
+  }
 })

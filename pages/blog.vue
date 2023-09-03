@@ -17,20 +17,29 @@ const { data } = await useAsyncData(() => queryContent('/blog').find())
             comentar e
             compartilhar!
         </div>
-        <div class="mt-10 flex">
-            <div class="mx-10 px-6 py-4 w-[30rem] h-[30rem] overflow-hidden border-green-500 border-8 rounded-md" v-for="post in data"
-                :key="post.slug">
-                <div class="flex justify-between">
-                    <div class="text-2xl text-green-500">{{ post.title }}</div>
-                    <div class="text-2xl text-green-500">10/10/2022</div>
-                </div>
-                <div class="mt-4">
-                    <Suspense>
-                        <ContentRenderer :value="post"></ContentRenderer>
-                    </Suspense>
-                </div>
-            </div>
-        </div>
+        <Suspense>
+            <swiper-container space-between="20" class="mt-6" :breakpoints="{
+                768: {
+                    slidesPerView: 3,
+                },
+            }">
+                <swiper-slide v-for="post in data" :key="post.slug">
+                    <div class="px-4 py-2 h-[37rem] overflow-scroll border-green-500 border-2 rounded-md">
+                        <div class="flex justify-between">
+                            <div class="flex items-center">
+                                <div class="text-2xl text-green-500">{{ post.title }}</div>
+                                <Icon class="ml-2 text-gray-400" size="1em" name="material-symbols:open-in-new" />
+                            </div>
+                            <div class="text-2xl text-green-500">{{ post.date }}</div>
+                        </div>
+                        <div class="mt-4">
+                            <ContentDoc class="prose prose-xl text-gray-400" :path="post._path">
+                            </ContentDoc>
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </Suspense>
     </div>
 </template>
 
