@@ -26,12 +26,10 @@ const { data } = await useAsyncData(() => queryContent('/blog').find())
                 <swiper-slide v-for="post in data" :key="post.slug">
                     <div class="px-4 py-2 h-[37rem] overflow-scroll border-green-500 border-2 rounded-md">
                         <div class="flex justify-between">
-                            <div class="flex items-center">
-                                <div class="text-2xl text-green-500">{{ post.title }}</div>
-                                <Icon class="ml-2 text-gray-400" size="1em" name="material-symbols:open-in-new" />
-                            </div>
+                            <div class="text-2xl text-green-500">{{ post.description }}</div>
                             <div class="text-2xl text-green-500">{{ post.date }}</div>
                         </div>
+                        <div class="text-xs text-gray-500">Abrir separadamente</div>
                         <div class="mt-4">
                             <ContentDoc class="prose prose-xl text-gray-400" :path="post._path">
                             </ContentDoc>

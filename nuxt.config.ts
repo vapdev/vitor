@@ -21,6 +21,9 @@ export default defineNuxtConfig({
   //   }
   // },
   app: {
+    head: {
+      title: 'Vitor Full Stack Developer',
+    },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
   tailwindcss: {
