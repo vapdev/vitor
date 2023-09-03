@@ -3,7 +3,6 @@ description: 'Minha experiência com nuxt'
 date: '03/09/2023'
 ---
 
-## teste
 Essa é a primeira vez que uso Nuxt.  Confesso que antes eu ficava pensando "Nossa mas pra que usar o nuxt nem parece tanta vantagem assim. É só pra ter SSR melhor?"
 
 O que se vc for ver por si só já seria um ótimo motivo pra usar porque é muito importante que seu site possa ser bem indexado nos buscadores.
