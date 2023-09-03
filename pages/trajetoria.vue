@@ -1,7 +1,7 @@
 <script setup>
 definePageMeta({
     middleware: [
-        'blog',
+        'slide',
     ],
 });
 const empresas = ref(

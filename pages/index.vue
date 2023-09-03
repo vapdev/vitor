@@ -1,6 +1,6 @@
 <script setup>
 definePageMeta({
-  middleware: ["blog"],
+  middleware: ['slide'],
 });
 </script>
 

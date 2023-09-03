@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
   middleware: [
-    'blog',
+    'slide',
   ],
 });
 </script>
