@@ -5,7 +5,7 @@ definePageMeta({
     ],
 });
 
-const { data } = await useAsyncData(() => queryContent('/blog').find());
+const { data } = await useAsyncData(() => queryContent('/blog').sort({title: -1}).find());
 
 </script>
 
