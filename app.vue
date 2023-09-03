@@ -44,8 +44,8 @@ html {
   transform: translate(60vw, 0);
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0px;
   background: transparent;
-} */
+}
 </style>
