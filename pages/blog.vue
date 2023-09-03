@@ -12,12 +12,6 @@ const { data } = await useAsyncData(() => queryContent('/blog').sort({title: -1}
 <template>
     <div>
         <div class="mb-4 text-4xl text-green-500">Blog</div>
-        <div>
-            Vou utilizar este espaço para compartilhar meus <span class="text-green-500">pensamentos, ideias e
-                experiências</span>. Fique à vontade para
-            comentar e
-            compartilhar!
-        </div>
         <Suspense>
             <swiper-container space-between="20" class="mt-6" :breakpoints="{
                 768: {
@@ -25,7 +19,7 @@ const { data } = await useAsyncData(() => queryContent('/blog').sort({title: -1}
                 },
             }">
                 <swiper-slide v-for="post in data" :key="post.slug">
-                    <div class="px-4 py-2 h-[37rem] overflow-scroll border-green-500 border rounded-md">
+                    <div class="px-4 py-2 h-[42rem] overflow-scroll border-green-500 border rounded-md">
                         <div class="flex justify-between">
                             <div class="text-2xl text-green-500">{{ post.description }}</div>
                             <div class="text-2xl text-green-500">{{ post.date }}</div>
