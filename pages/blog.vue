@@ -5,7 +5,7 @@ definePageMeta({
     ],
 });
 
-const { data } = await useAsyncData(() => queryContent('/blog').sort({title: -1}).find());
+const { data } = await useAsyncData(() => queryContent('/blog').sort({ title: -1 }).find());
 
 </script>
 
@@ -13,13 +13,13 @@ const { data } = await useAsyncData(() => queryContent('/blog').sort({title: -1}
     <div>
         <div class="mb-4 text-4xl text-green-500">Blog</div>
         <Suspense>
-            <swiper-container space-between="20" class="mt-6" :breakpoints="{
+            <swiper-container navigation="true" a11y="true" space-between="20" class="mt-6 navigation" :breakpoints="{
                 768: {
                     slidesPerView: 3,
                 },
             }">
                 <swiper-slide v-for="post in data" :key="post.slug">
-                    <div class="px-4 py-2 h-[42rem] overflow-scroll border-green-500 border rounded-md">
+                    <div class="md:px-4 py-2 h-[42rem] overflow-scroll border-green-500 md:border rounded-md">
                         <div class="flex justify-between">
                             <div class="text-2xl text-green-500">{{ post.description }}</div>
                             <div class="text-2xl text-green-500">{{ post.date }}</div>
@@ -36,3 +36,11 @@ const { data } = await useAsyncData(() => queryContent('/blog').sort({title: -1}
     </div>
 </template>
 
+<style>
+.navigation{
+    --swiper-navigation-size: 30px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 8px;
+    --swiper-navigation-color: #1DA04D;
+}
+</style>
